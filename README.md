@@ -1,48 +1,51 @@
-# Mini Library Management System (Java)
+# Java Library Management System
 
-This is a simple Object-Oriented mini project in Java to manage books and users in a library. The system allows you to add books and users, issue books to users, return books, and list all books and users.
+This is a simple console-based Library Management System written in Java using Object-Oriented Programming (OOP) principles. The system allows you to manage users and books, and provides features to add users/books, list them, and issue/return books.
 
 ## Features
 
-- Add new books and users to the library
-- Issue a book to a user
-- Return a book to the library
-- List all books with their status (available/issued)
-- List all users
+- **Add User:** Add a new user with a unique ID and name.
+- **Add Book:** Add a new book with a unique ID, title, and author.
+- **List Users:** Display all registered users.
+- **List Books:** Display all books with their status (available/issued).
+- **Issue Book:** Issue a book to a user.
+- **Return Book:** Return a previously issued book.
 
-## Classes
+## How to Use
 
-- **Book**: Represents a book with ID, title, author, and issued status.
-- **User**: Represents a user with ID and name.
-- **Library**: Manages collections of books and users, and provides methods to issue/return books.
-- **Main**: Demonstrates usage of the system.
-
-## How to Run
-
-1. **Clone or Download** this repository.
-2. **Navigate** to the `src` directory.
-3. **Compile** the Java files:
-    ```
+1. **Compile the code:**
+    ```sh
     javac Main.java Library.java Book.java User.java
     ```
-4. **Run** the program:
-    ```
+
+2. **Run the program:**
+    ```sh
     java Main
     ```
 
-## Example Output
+3. **Follow the on-screen menu** to add users, add books, list users/books, issue or return books.
+
+## Example Menu
 
 ```
-101: 2025 by George Orwell [Available]
-102: To Kill a Mockingbird by Harper Lee [Available]
-Book '2025' issued to Alice.
-101: 2025 by George Orwell [Issued to: Alice]
-102: To Kill a Mockingbird by Harper Lee [Available]
-Book '2025' returned by Alice.
-101: 2025 by George Orwell [Available]
-102: To Kill a Mockingbird by Harper Lee [Available]
+Library Menu:
+1. Add User
+2. Add Book
+3. List Users
+4. List Books
+5. Issue Book
+6. Return Book
+0. Exit
+Enter your choice:
 ```
 
 ## Requirements
 
 - Java JDK 8 or above
+
+## Notes
+
+- Each user and book must have a unique ID.
+- The system is entirely in-memory and does not persist data after the program exits.
+
+## License
